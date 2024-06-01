@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="top" class="space-animation"></div>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-nav">
+        <a class="navbar-brand" href="#top">Mosimanegape Mholo</a>
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a id="homeLink" class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="aboutLink" class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="portfolioLink" class="nav-link" href="projects.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contactLink" class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section id="contact" class="section bg-light d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="container text-center">
+        <h2>Contact Me</h2>
+        <p>If you're interested in collaborating or have any questions, feel free to reach out to me:</p>
+        <div class="d-flex justify-content-center align-items-center my-4">
+            <a href="mailto:mosimanegape.w.mholo@gmail.com" class="mx-3"><i class="fas fa-envelope fa-3x"></i></a>
+            <a href="https://github.com/Mosimanegape" class="mx-3"><i class="fab fa-github fa-3x"></i></a>
+            <a href="https://www.facebook.com/yourprofile" class="mx-3"><i class="fab fa-facebook fa-3x"></i></a>
+            <a href="https://www.instagram.com/m_mholo/" class="mx-3"><i class="fab fa-instagram fa-3x"></i></a>
+            <a href="https://wa.me/26774534510" class="mx-3"><i class="fab fa-whatsapp fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/mosimanegape-mholo-4506a9220/" class="mx-3"><i class="fab fa-linkedin fa-3x"></i></a>
+            <a href="https://www.kaggle.com/mosimanegapemholo" class="mx-3"><i class="fab fa-kaggle fa-3x"></i></a>
+        </div>
+    </div>
+</section>
+
+<footer class="text-white text-center py-3 bg-dark">
+    <div class="container">
+        <p>&copy; 2024 Mosimanegape Mholo</p>
+    </div>
+</footer>
+
+<!-- Bootstrap and JavaScript files -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var links = document.querySelectorAll(".nav-link");
+        var currentUrl = window.location.href;
+
+        links.forEach(function(link) {
+            if (link.href === currentUrl) {
+                link.classList.add("active");
+            }
+        });
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</script>
+<script src="script.js"></script>
+</body>
+</html>

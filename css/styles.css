@@ -1,0 +1,231 @@
+/* styles.css */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items vertically */
+    min-height: 100vh; /* Ensure body takes up at least the height of the viewport */
+    background-color: #1e1d1d;
+    font-family: 'Lato', sans-serif;
+    padding-top: 70px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container h2 {
+    font-weight: bold;
+}
+header {
+    background-color: #1e1d1d;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    padding: 0;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    font-size: 16px;
+    margin-right: 30px; /* Adjust this value as needed */
+}
+
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 40px;
+}
+
+#contact .container {
+    max-width: 800px;
+    text-align: center;
+}
+
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+    background-color: #1e1d1d;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.active {
+    font-weight: bold; /* Example styling */
+    color: red; /* Example styling */
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.about-section img {
+    max-width: 150px; /* Adjust image size */
+    border-radius: 50%; /* Make image circular */
+    margin-bottom: 20px;
+}
+
+.about-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1e1d1d; /* Light background color */
+    /* background-image: url('path-to-background-image.jpg'); */
+    /* background-size: cover; */
+}
+
+.space-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 2px;
+    height: 2px;
+    opacity: 0;
+    animation: twinkling 5s infinite;
+}
+
+@keyframes twinkling {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.icons {
+    margin-top: 1em;
+}
+
+.icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+.navbar {
+    background-color: #1e1d1d;
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.3s ease-in-out; /* Add transition to color property */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff5733; /* Change color on hover */
+}
+
+.content-section {
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.profile-picture {
+    width: 200px; /* Adjust the size of the image */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 20px; /* Add space below the image */
+}
+
+.name {
+    font-size: 50px; /* Adjust font size */
+    font-weight: bold; /* Make the name bold */
+    margin-bottom: 40px; /* Add space below the name */
+    color: #fafafa;
+}
+
+.description {
+    font-size: 18px; /* Adjust font size */
+    color: #fafafa; /* Adjust text color */
+}
+
+.bordered-content {
+    border: 2px solid #000; /* Add a solid black border */
+    padding: 20px; /* Add padding inside the border */
+    max-width: 800px; /* Set a maximum width for the content */
+    background-color: #f8f9fa; /* Optional: Add a background color for better visibility */
+}
+
+.bordered-content h2 {
+    font-size: 36px; /* Adjust font size for the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.bordered-content p {
+    font-size: 18px; /* Adjust font size for the paragraph */
+    color: #333; /* Adjust text color */
+}
+
+/* Sticky Navigation */
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+/* Adjust body padding for fixed navbar */
+body.fixed-nav {
+    padding-top: 20px; /* Adjust this value based on the height of your navbar */
+    padding-bottom: 40px;
+}
