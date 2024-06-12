@@ -14,7 +14,7 @@ body {
     display: flex; /* Use flexbox layout */
     flex-direction: column; /* Arrange items vertically */
     min-height: 100vh; /* Ensure body takes up at least the height of the viewport */
-    background-color: #1e1d1d;
+    background-color: #01050f;
     font-family: 'Lato', sans-serif;
     padding-top: 70px;
 }
@@ -29,9 +29,8 @@ body {
     font-weight: bold;
 }
 header {
-    background-color: #1e1d1d;
+    background-color: #070707;
     color: #fff;
-    padding: 20px 0;
 }
 
 header h1 {
@@ -52,6 +51,10 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+.navbar {
+    background-color: #01050f;
 }
 
 .navbar-brand {
@@ -81,7 +84,7 @@ nav ul li a {
 
 footer {
     margin-top: auto; /* Push footer to the bottom */
-    background-color: #1e1d1d;
+    background-color: #030a1a;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -114,7 +117,7 @@ footer {
 .about-section {
     padding: 60px 20px;
     text-align: center;
-    background-color: #1e1d1d; /* Light background color */
+     /* Light background color */
     /* background-image: url('path-to-background-image.jpg'); */
     /* background-size: cover; */
 }
@@ -165,9 +168,6 @@ footer {
     transform: scale(1.1);
 }
 
-.navbar {
-    background-color: #1e1d1d;
-}
 
 .navbar-nav .nav-link {
     transition: color 0.3s ease-in-out; /* Add transition to color property */
@@ -182,15 +182,17 @@ footer {
 }
 
 .profile-picture {
-    width: 200px; /* Adjust the size of the image */
+    position: relative;
+    width: 230px; /* Adjust the size of the image */
     border-radius: 50%; /* Make the image circular */
-    margin-bottom: 20px; /* Add space below the image */
+    margin-bottom: 30px; /* Add space below the image */
+    z-index: 10;
 }
 
 .name {
     font-size: 50px; /* Adjust font size */
     font-weight: bold; /* Make the name bold */
-    margin-bottom: 40px; /* Add space below the name */
+    margin-bottom: 20px; /* Add space below the name */
     color: #fafafa;
 }
 
@@ -199,21 +201,29 @@ footer {
     color: #fafafa; /* Adjust text color */
 }
 
-.bordered-content {
-    border: 2px solid #000; /* Add a solid black border */
+.bordered-content { /* Add a solid black border */
     padding: 20px; /* Add padding inside the border */
     max-width: 800px; /* Set a maximum width for the content */
-    background-color: #f8f9fa; /* Optional: Add a background color for better visibility */
+    background-color: #010716; /* Optional: Add a background color for better visibility */
 }
 
 .bordered-content h2 {
     font-size: 36px; /* Adjust font size for the heading */
     margin-bottom: 20px; /* Add space below the heading */
+    color: #fafafa;
 }
 
 .bordered-content p {
     font-size: 18px; /* Adjust font size for the paragraph */
-    color: #333; /* Adjust text color */
+    color: #fafafa; /* Adjust text color */
+}
+
+#projects {
+    margin-top: 40px;
+}
+
+.text-center {
+    color: #fafafa;
 }
 
 /* Sticky Navigation */
@@ -229,3 +239,32 @@ body.fixed-nav {
     padding-top: 20px; /* Adjust this value based on the height of your navbar */
     padding-bottom: 40px;
 }
+
+.footer-icon {
+    font-size: 1.5em; /* Increase size */
+    margin: 0 10px;
+}
+
+.footer-icon:hover {
+    color: #f8f9fa; /* Slightly lighter color on hover */
+    transition: color 0.3s ease-in-out;
+}
+
+#intro {
+    color: #01091a;
+}
+
+#skills {
+    color: #010818;
+}
+
+footer .list-inline-item a {
+    color: #fff;
+    font-size: 1.5rem;
+}
+footer .list-inline-item a:hover {
+    color: #d8a732;
+}
+
+/* Contact Form
+
